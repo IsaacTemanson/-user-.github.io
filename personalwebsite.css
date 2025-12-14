@@ -51,3 +51,42 @@ a:hover, a:focus {
     padding: 1em;
   }
 }
+
+.highlight {
+  background-color: #fff3cd;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-title:after {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #003366;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  animation: underlineGrow 2s ease forwards;
+}
+@keyframes underlineGrow {
+  to {
+    width: 100%;
+  }
+}
