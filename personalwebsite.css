@@ -85,6 +85,11 @@ a:hover, a:focus {
   transform: translateX(-50%);
   animation: underlineGrow 2s ease forwards;
 }
+.animated-title {
+  position: relative;
+  display: inline-block;
+}
+
 @keyframes underlineGrow {
   to {
     width: 100%;
